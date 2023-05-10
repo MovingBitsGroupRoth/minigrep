@@ -10,7 +10,7 @@ fn main() {
     println!("Searching for {}", config.query);
     println!("In file {}", config.path);
     if let Err(e) = run(config) {
-        eprintln!("Internal error, {e}");
+        eprintln!("Application error, {e}");
         process::exit(1);
     };
 }
